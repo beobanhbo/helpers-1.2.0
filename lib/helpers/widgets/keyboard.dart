@@ -45,7 +45,7 @@ class _KeyboardVisibilityBuilderState extends State<KeyboardVisibilityBuilder>
 
   @override
   void initState() {
-    _instance.addObserver(this);
+    _instance?.addObserver(this);
     didChangeMetrics();
     super.initState();
   }
