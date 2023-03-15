@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:helpers/helpers.dart';
+import 'dart:typed_data';
 
 class Misc {
   /// Creates a [Stopwatch] in stopped state with a zero elapsed count.
