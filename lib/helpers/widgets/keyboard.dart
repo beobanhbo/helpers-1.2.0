@@ -29,7 +29,7 @@ class _KeyboardVisibilityBuilderState extends State<KeyboardVisibilityBuilder>
   @override
   void didChangeMetrics() {
     final bottomInset = _instance?.window.viewInsets.bottom;
-    final newValue = bottomInset > 0.0;
+    final newValue = (bottomInset??0) > 0.0;
     if (newValue != _isKeyboardVisible) {
       _isKeyboardVisible = newValue;
       if (mounted) setState(() {});
